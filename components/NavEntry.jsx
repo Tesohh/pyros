@@ -2,7 +2,7 @@ import Link from "next/link";
 
 /**
  *
- * @param {{id: string, n: number, text: string, active:boolean}} props
+ * @param {{id: string, n?: number, text: string, active:boolean}} props
  */
 export default function NavEntry(props) {
   return (
@@ -13,7 +13,7 @@ export default function NavEntry(props) {
             props.active ? "text-white" : "text-dim"
           } hover:text-primary`}
         >
-          <span className="text-primary">{props.n || "#"}.</span>{" "}
+          {/* <span className="text-primary">{props.n || "#"}.</span>{" "} */}
           {props.text || "NavbarEntry"}
         </a>
       </Link>
