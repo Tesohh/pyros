@@ -17,12 +17,18 @@ export default function Home() {
       </head>
       <body className="bg-body text-white">
         <Navbar name="asd" />
-        <div className="md:ml-96">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ea
-          recusandae molestiae expedita deleniti ullam numquam voluptatem
-          delectus similique error, dignissimos pariatur facilis quasi aut
-          magnam voluptatibus dolore odio in.
+        <div className="lg:ml-96 md:ml-72" id="">
+          <div className="flex flex-col justify-center items-center h-screen w-full">
+            <span className="font-bold text-[7vw] text-primary">
+              We make games
+            </span>
+            <span className="font-bold text-[5vw] text-dim">
+              they're on fire!
+            </span>
+          </div>
         </div>
+        <div className="lg:ml-96 md:ml-72" id="games"></div>
+        <div className="lg:ml-96 md:ml-72" id="about"></div>
         {/* <span className="font-bold text-blue-600">Giuro</span> */}
       </body>
     </>
